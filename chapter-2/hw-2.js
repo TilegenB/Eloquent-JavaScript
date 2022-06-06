@@ -17,3 +17,15 @@ for (let i = 0; i < num; i++) {
     }
 }
 // 3 Task
+{
+    let chees = '#';
+    let cheesDesk = ' ';
+    let num = 9;
+    for (let i = 0; i < num; i++) {
+        if (num % 2 === 0) {
+            console.log(cheesDesk += chees + ' #');
+        } else {
+            console.log(cheesDesk += chees);
+        }
+    }
+}
