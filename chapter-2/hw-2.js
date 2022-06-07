@@ -18,14 +18,17 @@ for (let i = 0; i < num; i++) {
 }
 // 3 Task
 {
-    let chees = '#';
-    let cheesDesk = ' ';
-    let num = 9;
-    for (let i = 0; i < num; i++) {
-        if (num % 2 === 0) {
-            console.log(cheesDesk += chees + ' #');
-        } else {
-            console.log(cheesDesk += chees);
+    let size = 8;
+    let board = '';
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            if ((x + y) % 2 === 0) {
+                board += ' ';
+            } else {
+                board += '#';
+            }
         }
+        board += '\n';
     }
+    console.log(board);
 }
