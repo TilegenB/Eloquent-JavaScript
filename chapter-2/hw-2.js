@@ -16,34 +16,19 @@ for (let i = 0; i < num; i++) {
         console.log(`FizzBuzz ${[i]}`);
     }
 }
-// 3 Task Error
-/* 
- # # # #
-# # # #
- # # # #
-# # # #
- # # # #
-
-*/
+// 3 Task
 {
-let lattice = '#';
-for (let y = 1; y < 9; y++) {
-    if (y % 2 === 0) {
-        console.log(lattice);
+    let size = 8;
+    let board = '';
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            if ((x + y) % 2 === 0) {
+                board += ' ';
+            } else {
+                board += '#';
+            }
+        }
+        board += '\n';
     }
-}
-}
-
-{
-let size = 8;
-let cheesSym = '#';
-let cheesDesk = '';
-for (let i = 0; i < size; i++) {
-    if (i % 2 === 0) {
-        cheesDesk += ` ${cheesSym} ${cheesSym} ${cheesSym} ${cheesSym}`;
-    } else {
-        cheesDesk += `\n ${cheesSym}`;
-    }
-}
-console.log(cheesDesk);
+    console.log(board);
 }
